@@ -1,0 +1,32 @@
+model_params:
+  in_channels: 1024
+  layers: [896, 768, 640, 512]
+
+data_params:
+  train_batch_size: 256
+  val_batch_size:  256
+  num_workers: 1
+  emb_source: 'predicate_emb,arg1_emb,arg2_emb,sent_sbert_emb,sense_explanation_emb,sense_example_emb'
+  emb_merge_format: 'average'
+
+exp_params:
+  LR: 0.005
+  dropout: 0.2
+  weight_decay: 0.00001
+  scheduler_gamma: 0.95
+  manual_seed: 0
+  loss_name: 'triplet'
+  regularization_flag: True
+  regularization_weight: 0.01
+  margin: 1.
+  depth: 19
+  tau: 1.0
+
+  test_only: True
+  last_version: -1
+
+trainer_params:
+  gpus: [0]
+  max_epochs: 100
+
+
