@@ -1,5 +1,5 @@
 # CEO
-This repository contains codes to apply **CEO** (method proposed in paper ``CEO: Corpus-based Open-Domain Event Ontology Induction``) for event ontology induction.
+This repository contains codes to apply **CEO** (method proposed in paper ``CEO: Corpus-based Open-Domain Event Ontology Induction`` accepted by EACL 2024 Findings) for event ontology induction.
 
 ## Download
 1. Codes
